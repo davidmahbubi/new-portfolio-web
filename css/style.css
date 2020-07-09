@@ -8,7 +8,9 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 330px
+  overflow: auto;
+  width: 330px;
+  transition: .2s;
 }
 
 .profile-picture {
@@ -59,4 +61,57 @@
 .main-body {
   margin-left: 330px;
   padding: 60px 40px;
+}
+
+.topbar {
+  color: white;
+  background-color: #2962ff;
+  left: 0; right: 0; top: 0;
+  display: none;
+}
+
+.sidebar-toggler {
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #2962ff;
+  color: whte;
+  font-size: 20px;
+  transition: .2s;
+}
+
+.sidebar-dark-overlay {
+  background-color: rgba(0, 0, 0, .8);
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: none;
+}
+
+@media(max-width: 1024px) {
+
+  .main-body {
+    margin-left: 0;
+    padding: 120px 0;
+  }
+
+  .sidebar-dark-overlay {
+    display: block;
+  }
+
+  .sidebar-hide {
+    transform: translateX(-400px);
+  }
+
+  .sidebar-dark-overlay-hide {
+    display: none;
+  }
+
+  .topbar {
+    display: block;
+  }
+
+}
+
+@media(max-width: 1024px) {
+  .container {
+    max-width: 900px !important;
+  }
 }
