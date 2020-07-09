@@ -1,0 +1,62 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+.sidebar {
+  background-color: #2962ff;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 330px
+}
+
+.profile-picture {
+  width: 100%;
+  max-width: 190px;
+}
+
+.sidebar-paragraph {
+  line-height: 23px;
+}
+
+.social-media-links li {
+  list-style-type: none;
+  display: inline;
+}
+
+.social-media-links li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  background-color: white;
+  color: #2962ff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .1s;
+}
+
+.social-media-links li a:hover {
+  transform: scale(1.1);
+}
+
+.sidebar-navigation-link ul {
+  list-style-type: none;
+}
+
+.sidebar-navigation-link ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: .2s;
+}
+
+.sidebar-navigation-link ul li a:hover {
+  margin-left: 10px;  
+}
+
+.main-body {
+  margin-left: 330px;
+  padding: 60px 40px;
+}
