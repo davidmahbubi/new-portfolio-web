@@ -85,6 +85,14 @@
   display: none;
 }
 
+.brand-ic {
+  font-size: 28px;
+}
+
+.t-d-none {
+  text-decoration: none;
+}
+
 @media(max-width: 1024px) {
 
   .main-body {
