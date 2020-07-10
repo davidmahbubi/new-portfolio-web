@@ -101,15 +101,19 @@
   }
 
   .sidebar-dark-overlay {
-    display: block;
+    display: none;
   }
 
-  .sidebar-hide {
+  .sidebar {
     transform: translateX(-400px);
   }
 
-  .sidebar-dark-overlay-hide {
-    display: none;
+  .sidebar-show {
+    transform: translateX(0);
+  }
+
+  .sidebar-dark-overlay-show {
+    display: block;
   }
 
   .topbar {

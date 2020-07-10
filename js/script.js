@@ -16,10 +16,10 @@ sidebarToggler.addEventListener('click', function() {
 
 function toggleSidebar(sidebar, overlay, state = 'hide') {
     if (state === 'hide') {
-        sidebar.classList.add('sidebar-hide');
-        overlay.classList.add('sidebar-dark-overlay-hide');
+        sidebar.classList.remove('sidebar-show');
+        overlay.classList.remove('sidebar-dark-overlay-show');
     } else {
-        sidebar.classList.remove('sidebar-hide');
-        overlay.classList.remove('sidebar-dark-overlay-hide');
+        sidebar.classList.add('sidebar-show');
+        overlay.classList.add('sidebar-dark-overlay-show');
     }
 }
